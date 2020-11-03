@@ -23,7 +23,7 @@ inputs:
     required: false
     default: ./
   DEPLOYMENT_MODE:
-    description: "vue-cli-service deployment mode. More info: https://cli.vuejs.org/guide/mode-and-env.html#modes  
+    description: "vue-cli-service deployment mode. More info: https://cli.vuejs.org/guide/mode-and-env.html#modes"  
     required: false
     default: production
 
