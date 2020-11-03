@@ -1,0 +1,34 @@
+name: "Github action for deploy Vue app to Amazon s3 bucket 🗑"
+description: "Easy way to build and upload distributibles files of Vue application to amazon s3 bucket"
+
+branding:
+  icon: "archive"
+  color: "orange"
+
+inputs:
+  AWS_ACCESS_KEY_ID:
+    description: "Amazon access key id"
+    required: true
+  AWS_SECRET_ACCESS_KEY:
+    description: "Amazon secret access key"
+    required: true
+  AWS_DEFAULT_REGION:
+    description: "Bucket region. (Ex: us-east-1)"
+    required: true
+  AWS_BUCKET_NAME:
+    description: "Bucket name"
+    required: true
+  APP_SOURCE_CODE:
+    description: "Application source files location. Default: root directory."
+    required: false
+    default: ./
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  env:
+    AWS_ACCESS_KEY_ID: ${{ inputs.AWS_ACCESS_KEY_ID }}
+    AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
+    AWS_DEFAULT_REGION: ${{ inputs.AWS_DEFAULT_REGION }}
+    AWS_BUCKET_NAME: ${{ inputs.AWS_BUCKET_NAME }}
+    APP_SOURCE_CODE: ${{ inputs.APP_SOURCE_CODE }}
