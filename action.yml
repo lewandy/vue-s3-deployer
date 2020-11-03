@@ -22,6 +22,10 @@ inputs:
     description: "Application source files location. Default: root directory."
     required: false
     default: ./
+  DEPLOYMENT_MODE:
+    description: "vue-cli-service deployment mode. More info: https://cli.vuejs.org/guide/mode-and-env.html#modes  
+    required: false
+    default: production
 
 runs:
   using: "docker"
