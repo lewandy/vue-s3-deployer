@@ -20,7 +20,7 @@ In your workflow, define a step which refers to the action:
 
 ### Configuration
 
-These settings are environment varables that the action will use for make the deployment. Below we describe each variable.
+These settings are environment variables that the action will use for make the deployment. Below we describe each variable.
 
 | Key | Value | Required | Default |
 | ------------- | ------------- | ------------- | ------------- |
