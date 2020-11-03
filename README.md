@@ -1,4 +1,4 @@
-# Vue s3 deployer 🚀
+# Vue s3 deployer github action 🚀
 
 Github action for deploy Vue app to Amazon s3 bucket. 🚀📦
 
@@ -17,7 +17,7 @@ In your workflow, define a step which refers to the action:
           APP_SOURCE_CODE: ./example
 ```
 
-# Complete example
+# Complete workflow example 😁
 
 This is a simple workflow for deploy Vue app using Vue s3 deployer action.
 
@@ -56,6 +56,25 @@ jobs:
           APP_SOURCE_CODE: ./example
 ```
 
-# Note ✏
+# Note 👀
 
-Remember save your amazon account credentials in repository secrets, stay safely guys. 😉
+Remember save your amazon account credentials in repository secrets stay safely guys. 😉
+
+
+# 🤝 Contributing
+
+1. Fork this repository.
+2. Create new branch with feature name.
+3. Commit and set commit message with feature name.
+4. Push your code to your fork repository.
+5. Create pull request. 🙂
+
+# ⭐️ Support
+
+If you like this project, You can support me with starring ⭐ this repository.
+
+# 📄 License
+
+[MIT](LICENSE)
+
+Made with ❤️ and ☕️ from the dominican republic 🌴
