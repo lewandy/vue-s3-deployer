@@ -9,7 +9,7 @@ npm install > /dev/null 2>&1
 
 #Build application
 echo "Building application"
-npx vue-cli-service build --mode $INPUT_DEPLOYMENT_MODE
+bash -c $INPUT_BUILD_COMMAND
 
 #Sync files with amazon s3 bucket app
 aws --region $INPUT_AWS_DEFAULT_REGION s3 sync ./dist s3://$INPUT_AWS_BUCKET_NAME --no-progress --delete
