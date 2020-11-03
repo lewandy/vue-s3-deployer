@@ -14,8 +14,11 @@ In your workflow, define a step which refers to the action:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_BUCKET_NAME: awesome-bucket
-          APP_SOURCE_CODE: ./example
+          APP_SOURCE_CODE: ./example 
 ```
+
+Note ✏ :
+If "APP_SOURCE_CODE" is not set, will be ./ or the root directory.
 
 # Complete workflow example 😁
 
