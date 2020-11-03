@@ -63,6 +63,11 @@ jobs:
 
 Remember store your amazon account credentials in repository secret. Stay safely guys. 😉
 
+# Resources
+
+- https://levelup.gitconnected.com/deploying-vue-js-to-aws-with-https-and-a-custom-domain-name-3ae1f79fe188
+- https://developer.okta.com/blog/2018/07/03/deploy-vue-app-aws
+
 
 # 🤝 Contributing
 
