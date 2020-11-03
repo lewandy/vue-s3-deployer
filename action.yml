@@ -32,4 +32,4 @@ runs:
     AWS_DEFAULT_REGION: ${{ inputs.AWS_DEFAULT_REGION }}
     AWS_BUCKET_NAME: ${{ inputs.AWS_BUCKET_NAME }}
     APP_SOURCE_CODE: ${{ inputs.APP_SOURCE_CODE }}
-    DEPLOYMENT_MODE: development
+    DEPLOYMENT_MODE: ${{ inputs.DEPLOYMENT_MODE }}
