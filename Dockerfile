@@ -16,7 +16,7 @@ RUN ./aws/install
 
 WORKDIR /src
 
-COPY entrypoint.sh ./entrypoint.sh
+ADD entrypoint.sh ./entrypoint.sh
 
 #Make entrypoint file executable
 RUN chmod +x entrypoint.sh
