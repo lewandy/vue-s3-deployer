@@ -16,14 +16,14 @@ inputs:
     description: "Bucket region. (Ex: us-east-1)"
     required: true
   AWS_BUCKET_NAME:
-    description: "Bucket name"
+    description: "Aws bucket name"
     required: true
   APP_SOURCE_CODE:
-    description: "Application source files location. Default: root directory."
+    description: "Source files location. Default: root directory."
     required: false
     default: ./
-  DEPLOYMENT_MODE:
-    description: "vue-cli-service deployment mode. More info: https://cli.vuejs.org/guide/mode-and-env.html#modes"  
+  BUILD_COMMAND:
+    description: "Command used to build your application. Ex: `npm run build`"  
     required: false
     default: production
 
