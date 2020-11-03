@@ -15,7 +15,7 @@ In your workflow, define a step which refers to the action:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
           APP_SOURCE_CODE: ./
-          BUILD_COMMAND: npm run build
+          BUILD_COMMAND: "npm run build"
 ```
 
 ### Configuration
@@ -69,7 +69,7 @@ jobs:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_BUCKET_NAME: awesome-bucket
           APP_SOURCE_CODE: ./example
-          BUILD_COMMAND: npm run build
+          BUILD_COMMAND: "npm run build"
 ```
 
 # Note 👀
