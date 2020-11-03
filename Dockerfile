@@ -14,7 +14,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN unzip awscliv2.zip
 RUN ./aws/install
 
-ADD entrypoint.sh ./entrypoint.sh
+ADD ./entrypoint.sh ./entrypoint.sh
 
 #Make entrypoint file executable
 RUN chmod +x entrypoint.sh
