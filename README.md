@@ -61,7 +61,7 @@ jobs:
 
 # Note 👀
 
-Remember save your amazon account credentials in repository secrets stay safely guys. 😉
+Remember store your amazon account credentials in repository secret. Stay safely guys. 😉
 
 
 # 🤝 Contributing
