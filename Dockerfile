@@ -1,5 +1,10 @@
 FROM node:12-slim
 
+LABEL "com.github.actions.name"="vue-s3-deployer"
+LABEL "com.github.actions.description"="Github action for deploy Vue app to Amazon s3 bucket. "
+LABEL "com.github.actions.icon"="archive"
+LABEL "com.github.actions.color"="orange"
+
 LABEL "maintainer"="Lewandy Diloné Bonifacio <lewandydilone1@live.com>"
 LABEL "repository"="https://github.com/lewandy/vue-s3-deployer"
 LABEL version="1.0.0"
