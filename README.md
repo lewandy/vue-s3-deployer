@@ -1,4 +1,4 @@
-# Vue s3 deployer github action 🚀
+# Vue s3 Deployer Github Action 🚀
 
 Github action for deploy Vue app to Amazon s3 bucket. 🚀📦
 
@@ -13,13 +13,24 @@ In your workflow, define a step which refers to the action:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          AWS_BUCKET_NAME: awesome-bucket
+          AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET_NAME }}
           APP_SOURCE_CODE: ./example
           DEPLOYMENT_MODE: production 
 ```
 
-Note ✏ :
-If "APP_SOURCE_CODE" is not set, will be ./ or the root directory.
+### Configuration
+
+These settings are environment varables that the action will use for make the deployment. Below we describe each variable.
+
+| Key | Value | Required | Default |
+| ------------- | ------------- | ------------- | ------------- |
+| `AWS_ACCESS_KEY_ID` | AWS Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) | **Yes** | N/A |
+| `AWS_SECRET_ACCESS_KEY` | AWS Secret Access Key. [More info here.](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) | **Yes** | N/A |
+| `AWS_BUCKET_NAME` | The name of the bucket you're syncing to. For example, `vue-action`. | **Yes** | N/A |
+| `AWS_DEFAULT_REGION` | The region of the bucket. Set to `us-east-1` by default. [Full list of regions here.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-
+| `APP_SOURCE_CODE` | This is the source code that will be deployed | **yes** | ./
+| `DEPLOYMENT_MODE` | Mode that vue-cli-service in the build process, more info : https://cli.vuejs.org/guide/mode-and-env.html | **yes** | production
+
 
 # Complete workflow example 😁
 
