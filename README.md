@@ -29,7 +29,7 @@ These settings are environment varables that the action will use for make the de
 | `AWS_BUCKET_NAME` | The name of the bucket you're syncing to. For example, `vue-action`. | **Yes** | N/A |
 | `AWS_DEFAULT_REGION` | The region of the bucket. Set to `us-east-1` by default. [Full list of regions here.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-
 | `APP_SOURCE_CODE` | This is the source code that will be deployed | **yes** | ./
-| `BUILD_COMMAND` | Command used to build the application : https://cli.vuejs.org/guide/mode-and-env.html | **yes** | production
+| `BUILD_COMMAND` | Command used to build the application : https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-build | **yes** | production
 
 
 # Complete workflow example 😁
