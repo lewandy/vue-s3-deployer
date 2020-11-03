@@ -1,6 +1,6 @@
 # Vue s3 Deployer Github Action 🚀
 
-Github action for deploy Vue app to Amazon s3 bucket. 🚀📦
+Github action for deploy Vue app to Amazon s3 bucket. 
 
 ## Usage
 
