@@ -13,7 +13,7 @@ In your workflow, define a step which refers to the action:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          AWS_BUCKET_NAME: vue-action
+          AWS_BUCKET_NAME: awesome-bucket
           APP_SOURCE_CODE: ./example
 ```
 
@@ -52,7 +52,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          AWS_BUCKET_NAME: vue-action
+          AWS_BUCKET_NAME: awesome-bucket
           APP_SOURCE_CODE: ./example
 ```
 
