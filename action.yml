@@ -26,9 +26,9 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.AWS_ACCESS_KEY_ID }}
-    - ${{ inputs.AWS_SECRET_ACCESS_KEY }}
-    - ${{ inputs.AWS_DEFAULT_REGION }}
-    - ${{ inputs.AWS_BUCKET_NAME }}
-    - ${{ inputs.APP_SOURCE_CODE }}
+  env:
+    AWS_ACCESS_KEY_ID: ${{ inputs.AWS_ACCESS_KEY_ID }}
+    AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
+    AWS_DEFAULT_REGION: ${{ inputs.AWS_DEFAULT_REGION }}
+    AWS_BUCKET_NAME: ${{ inputs.AWS_BUCKET_NAME }}
+    APP_SOURCE_CODE: ${{ inputs.APP_SOURCE_CODE }}
