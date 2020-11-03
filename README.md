@@ -7,7 +7,7 @@ Github action for deploy Vue app to Amazon s3 bucket. 🚀📦
 In your workflow, define a step which refers to the action:
 
 ```yaml
-- name: Deploying application to Amazon S3
+      - name: Deploying application to Amazon S3
         uses: lewandy/vue-s3-deployer@main
         with:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
